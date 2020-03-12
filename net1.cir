@@ -1,0 +1,12 @@
+first line is always a comment
+* comment
+# also comment
+
+V1 2 1 SIN(0 5 1)
+R1 2 0 2k
+R2 0 1 4k
+
+*.op
+*.dc V1 3V 12V 1V
+.tran 1ms 4 0 1ms
+

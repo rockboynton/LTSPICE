@@ -1,0 +1,10 @@
+netA
+* circuit from Figure A in the lab document
+
+V1 1 0 DC 10
+R1 1 2 2k
+R2 2 0 4k
+R3 2 3 4k
+V2 0 3 12
+
+.op
