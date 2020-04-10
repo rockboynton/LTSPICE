@@ -1,0 +1,20 @@
+Transformer
+
+* .model <model name> D (N = 1m, Is = 1nA)
+.MODEL 1N4148  D(Is=0.1p Rs=1.6 CJO=2p Tt=12n Bv=100 Ibv=0.1p)
+
+*Vin 1 0 SIN(0, 5, 1)
+*R1 2 0 1k
+*D1 1 2 1N4148
+
+Vin 1 0 SIN(0 100 60)
+L1 2 0 25m
+L2 3 0 1m
+k1 L1 L2 1
+Rs 1 2 0.1
+Rsim 0 0 100M
+RL 3 0 1k
+
+.tran 0.01 .1
+
+.end

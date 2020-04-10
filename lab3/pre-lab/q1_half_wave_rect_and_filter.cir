@@ -1,0 +1,16 @@
+Half-wave rectifier and filter capacitor stages of a power supply
+
+* accepts a 10V peak transformed secondary voltage V2 and limits the ripple
+* voltage to 15% if RL = 4.7K
+
+.MODEL 1N4148  D(Is=0.1p Rs=1.6 CJO=2p Tt=12n Bv=100 Ibv=0.1p)
+
+Vin 1 0 SIN(0, 10, 60)
+D1 1 2 1N4148
+C1 2 0 23.64uF
+R1 2 0 4.7k
+
+* .DC lin Vin -5 5 0.01
+.tran 1us 100ms
+
+.end

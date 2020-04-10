@@ -1,0 +1,8 @@
+netB
+* circuit from Figure B in the lab document
+
+V1 1 0 SIN(0 6 3e3)
+R1 1 2 5
+R2 2 0 1
+
+.tran 0.1ms 1ms
